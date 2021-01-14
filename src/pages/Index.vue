@@ -1,20 +1,19 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    <h1 class="text-blue-500 text-5xl leading-normal">Front-End<span class="block text-black text-6xl font-bold mb-8">Developer</span></h1>
+    <div class="w-3/6 text-3xl relative flex-1">
+      <div class="border-l-8 border-blue-500 h-1/3 absolute left-0 -ml-2 top-2"></div>
+      <div class="ml-4">
+        <p class="leading-normal">
+          Samouk i pasjonat technologii webowych. Od 4 lat sukcesywnie poszerzam swoją wiedzę i zdobywam
+          doświadczenie, wykonując w wolnym czasie projekty do portfolio i przyjmując zlecenia jako freelancer. 
+        </p>
+        <p class="leading-normal">
+          Posiadam stały kontakt z osobami związanymi z IT, od czasu do czasu
+          współpracując z nimi przy wspólnych aplikacjach internetowych.
+        </p>
+      </div>
+    </div>
   </Layout>
 </template>
 

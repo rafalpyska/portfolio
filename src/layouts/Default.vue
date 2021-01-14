@@ -1,18 +1,24 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">O mnie</g-link>
-        <g-link class="nav__link" to="/about/">Technologie</g-link>
-        <g-link class="nav__link" to="/about/">Portfolio</g-link>
-        <g-link class="nav__link" to="/about/">Kontakt</g-link>
+  <div class="flex flex-col bg-white my-4 mx-auto rounded-lg bg-main bg-no-repeat bg-main-svg min-h-80vh px-20 py-12 w-10/12 leading-loose">
+    <header class="header flex justify-between items-center flex-wrap py-8 mb-8">
+        <g-image src="@/assets/images/logo.svg" alt="Logo" />
+      <nav class="text-lg">
+        <g-link class="p-2" to="/">Strona główna</g-link>
+        <g-link class="p-2" to="/about/">O mnie</g-link>
+        <g-link class="p-2" to="/about/">Technologie</g-link>
+        <g-link class="p-2" to="/about/">Portfolio</g-link>
+        <g-link class="p-2" to="/about/">Kontakt</g-link>
       </nav>
     </header>
     <slot/>
+    <footer class="flex justify-end">
+        <g-link class="p-2" to="https://www.linkedin.com/in/rafal-pyska/">
+          <i class="fab fa-linkedin text-blue-500 text-3xl"></i>
+        </g-link>
+        <g-link class="p-2" to="https://www.facebook.com/profile.php?id=100000564851827">
+          <i class="fab fa-facebook-square text-blue-500 text-3xl"></i>
+        </g-link>
+    </footer>
   </div>
 </template>
 
@@ -25,29 +31,7 @@ query {
 </static-query>
 
 <style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
+.active {
+  color: rgba(59, 130, 246);
 }
 </style>

@@ -5,6 +5,11 @@ module.exports = {
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      backgroundImage: theme => ({
+        'main': "url(~@/assets/images/main.svg)"
+      })
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -94,6 +99,7 @@ module.exports = {
       'right-bottom': 'right bottom',
       'right-top': 'right top',
       top: 'top',
+      'main-svg': '87% 50%',
     },
     backgroundSize: {
       auto: 'auto',
@@ -189,6 +195,7 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      baloo: ['"Baloo 2"'],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
@@ -464,6 +471,7 @@ module.exports = {
       '5xl': '64rem',
       '6xl': '72rem',
       '7xl': '80rem',
+      80: '80%',
       full: '100%',
       min: 'min-content',
       max: 'max-content',
@@ -472,6 +480,7 @@ module.exports = {
     }),
     minHeight: {
       0: '0px',
+      '80vh': '80vh',
       full: '100%',
       screen: '100vh',
     },
